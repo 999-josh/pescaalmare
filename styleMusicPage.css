@@ -1,0 +1,68 @@
+body {
+    background-color: #f0f2f5;
+}
+
+.jumbotron {
+    background-color: #6c63ff;
+    color: white;
+    border-radius: 15px;
+}
+
+.song-card {
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.song-card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6c63ff;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.play-pause-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #6c63ff;
+    cursor: pointer;
+}
+
+.seek-slider {
+    width: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.seek-slider::-webkit-slider-thumb {
+    background: #6c63ff;
+    border-radius: 50%;
+}
+
+.seek-slider::-moz-range-thumb {
+    background: #6c63ff;
+    border-radius: 50%;
+}
