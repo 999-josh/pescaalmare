@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Gioele Furnò's Music" />
+    <meta name="keywords" content="Gioele Furnò" />
+    <meta name="keywords" content="il viaggio di Gioele" />
+    <meta name="keywords" content="Furnò" />
+    <meta name="author" content="Giosuè Platania" />
+
+    <title>Gioele's Music</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styleMusicPage.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center mt-5">
+            <h1 class="display-4">Ti Presentiamo l'unica pagina web ufficiale dove potrai ascoltare il meglio di Gioele Furnò</h1>
+            <p class="lead">Riproduci qui le tue canzoni preferite di Gioele!</p>
+        </div>
+        <div class="row">
+            <!-- Prima canzone -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm song-card">
+                    <div class="card-body">
+                        <h5 class="card-title">arriva il mio amico</h5>
+                        <p class="card-text">Gioele Furnò, Singolo, 2023</p>
+                        <div class="audio-player">
+                            <audio id="audio1" src="songs/arriva il mio amico.mp3"></audio>
+                            <div class="controls">
+                                <button class="play-pause-btn" onclick="togglePlayPause('audio1')">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio1', this)">
+                                <div class="time">
+                                    <br>
+                                    <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Seconda canzone -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm song-card">
+                    <div class="card-body">
+                        <h5 class="card-title">la spazzatura</h5>
+                        <p class="card-text">Gioele Furnò, Singolo, 2023</p>
+                        <div class="audio-player">
+                            <audio id="audio2" src="songs/la spazzatura.mp3"></audio>
+                            <div class="controls">
+                                <button class="play-pause-btn" onclick="togglePlayPause('audio2')">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio2', this)">
+                                <div class="time">
+                                    <br>
+                                    <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Terza canzone -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm song-card">
+                    <div class="card-body">
+                        <h5 class="card-title">la fine della scuola</h5>
+                        <p class="card-text">Gioele Furnò, Singolo, 2023</p>
+                        <div class="audio-player">
+                            <audio id="audio3" src="songs/la scuola.mp3"></audio>
+                            <div class="controls">
+                                <button class="play-pause-btn" onclick="togglePlayPause('audio3')">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio3', this)">
+                                <div class="time">
+                                    <br>
+                                    <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Quarta canzone -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm song-card">
+                <div class="card-body">
+                    <h5 class="card-title">l'acqua</h5>
+                    <p class="card-text">Gioele Furnò, Singolo, 2023</p>
+                    <div class="audio-player">
+                        <audio id="audio4" src="songs/l'acqua.mp3"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" onclick="togglePlayPause('audio4')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio4', this)">
+                            <div class="time">
+                                <br>
+                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quinta canzone -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm song-card">
+                <div class="card-body">
+                    <h5 class="card-title">Città di Versi: Il Viaggio di Gioele</h5>
+                    <p class="card-text">Gioele Furnò, Singolo, 2024</p>
+                    <div class="audio-player">
+                        <audio id="audio5" src="songs/Città di Versi Il viaggio di Gioele.mp3"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" onclick="togglePlayPause('audio5')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio5', this)">
+                            <div class="time">
+                                <br>
+                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sesta canzone -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm song-card">
+                <div class="card-body">
+                    <h5 class="card-title">il viaggio pt2</h5>
+                    <p class="card-text">Gioele Furnò,coming soon, 2024</p>
+                    <div class="audio-player">
+                        <audio id="audio6" src="songs/il viaggio pt2.mp3"></audio>
+                        <div class="controls">
+                            <button class="play-pause-btn" onclick="togglePlayPause('audio6')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio6', this)">
+                            <div class="time">
+                                <br>
+                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scriptMusicPage.js"></script>
+</body>
+</html>
