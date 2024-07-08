@@ -1,139 +1,61 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Pesca Al Mare</title>
-
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Gioele Furnò" />
+    <meta name="keywords" content="Gioele Furnò" />
+    <meta name="Description" content="Pesca al Mare" />
+    <meta name="keywords" content="il viaggio di Gioele" />
+    <meta name="keywords" content="Furnò" />
+    <meta name="author" content="Giosuè Platania" />
+    <title>Gioele's hub</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        #P {
-            font-size: small;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+        .btn-custom {
+            width: 200px;
+            height: 60px;
+            font-size: 18px;
+            margin: 10px;
+            border-radius: 30px;
+            transition: transform 0.2s;
+        }
+        .btn-custom:hover {
+            transform: scale(1.1);
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        a {
+            text-align: center;
         }
     </style>
-
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Pesca al mare by Gioela 
-            <br> <p id="P">(Versione alpha 0.1)</p>
-          </a>
-        </div>
-      </nav>
-      <div class="container my-5 text-center" style="max-width: 580px;">
-        <h1>Pesca al Mare!</h1>
-        <p class="lead">
-          Paga un botto di soldi per avere una bellissima pesca di dubbissima qualità!
-      </p>
-      <!--PULSANTI-->
-      <a target="_blank" class="btn btn-danger" href="non cliccare.html" role="button" >Non cliccare!</a>
-      <a target="_blank" class="btn btn-secondary" href="contattagioela.html" role="button" >Contatta Gioela</a>
-
-      </div>
-      <div class="container">
-        <div class="row">
-
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="images/pescabase.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Pesca "Normale"</h5>
-                <p class="card-text">Non acquistabile da eterosessuali</p>
-                <a target="_blank" href="carrelloPesche1.html" class="btn btn-success">Acquista a soli € 52.99</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="images/pescapane.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Pesca Con Pane Granulato</h5>
-                <p class="card-text">Forse è meglio non mangiarla</p>
-                <a target="_blank" href="carrelloPesche2.html" class="btn btn-success">Acquista a soli € 104.99</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="images/pescascaduta.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Pesca Andata a male</h5>
-                <p class="card-text">Potrebbe comunque essere migliore di quella di prima</p>
-                <a target="_blank" href="carrelloPesche3.html" class="btn btn-success">Acquista a soli € 26.99</a>
-              </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <img src="images/pescaincitta.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Pesca appesa davanti a dei palazzi</h5>
-                  <p class="card-text">Un altra roba strana e di dubbia qualità</p>
-                  <a target="_blank" href="carrelloPesche4.html" class="btn btn-success">Acquista a soli € 208.99</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <img src="images/pescainspiaggia.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Pesca sempre appesa ma sta volta davanti a una spiaggia</h5>
-                  <p class="card-text">Questa è tecnicamente la vera "pesca al mare"</p>
-                  <a target="_blank" href="carrelloPesche5.html" class="btn btn-success">Acquista a soli € 416.99</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <img src="images/" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Hey</h5>
-                  <p class="card-text">sei gay</p>
-                  <a href="#" class="btn btn-success">Acquista</a>
-                </div>
-              </div>
-              </div>
-
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img src="images/" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Hey</h5>
-                    <p class="card-text">sei gay</p>
-                    <a href="#" class="btn btn-success">Acquista</a>
-                  </div>
-                </div>
-                </div>
-
-                <div class="col">
-                  <div class="card" style="width: 18rem;">
-                    <img src="images/" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Hey</h5>
-                      <p class="card-text">sei gay</p>
-                      <a href="#" class="btn btn-success">Acquista</a>
-                    </div>
-                  </div>
-                  </div>
-
-          </div>
-        </div>
-      
-      
-      
-      
-      
-  </body>
+</head>
+<body>
+    <div class="container">
+        <h1>Scegli dove vuoi proseguire il tuo percorso</h1>
+        <a href="PescaAlMare.html" class="btn btn-primary btn-custom">Pesca al Mare</a>
+        <a href="gioeleFurnoSongs.html" class="btn btn-success btn-custom">Canzoni di Gioele</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
