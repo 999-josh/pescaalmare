@@ -9,8 +9,8 @@
     <meta name="keywords" content="Furnò" />
     <meta name="author" content="Giosuè Platania" />
 
-
-    <title>Gioele's Music</title>
+    
+    <title>Music Player</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome for icons -->
@@ -21,71 +21,130 @@
 <body>
     <div class="container">
         <div class="jumbotron text-center mt-5">
-            <h1 class="display-4" id="lilText">Ti Presentiamo l'unica pagina web ufficiale dove potrai ascoltare il meglio di Gioele Furnò</h1>
-            <p class="lead" id="lilText">Riproduci qui le tue canzoni preferite di Gioele!</p>
+            <h1 class="display-4" id="lilText">Ti Presentiamo in anteprima l'unica pagina web ufficiale dove potrai ascoltare il meglio di Gioele Furnò</h1>
+            <p class="lead" id="lilText">Riproduci le tue canzoni preferite di Gioele!</p>
         </div>
         <div class="row">
-            <!-- Prima canzone -->
+            <!-- PRIMA CANZONE -->
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm song-card">
                     <div class="card-body">
                         <h5 class="card-title">arriva il mio amico</h5>
-                        <p class="card-text">Gioele Furnò, Singolo, 2023</p>
+                        <p class="card-text">Singolo, 2023</p>
                         <div class="audio-player">
                             <audio id="audio1" src="songs/arriva il mio amico.mp3"></audio>
                             <div class="controls">
-                                <button class="play-pause-btn" onclick="togglePlayPause('audio1')">
+                                <button class="play-pause-btn" onclick="togglePlayPause('audio1', this)">
                                     <i class="fas fa-play"></i>
                                 </button>
                                 <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio1', this)">
-                                <div class="time">
-                                    <br>
-                                    <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
-                                </div>
+                                <br>
+                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Seconda canzone -->
+            <!-- SECONDA CANZONE -->
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm song-card">
                     <div class="card-body">
                         <h5 class="card-title">la spazzatura</h5>
-                        <p class="card-text">Gioele Furnò, Singolo, 2023</p>
+                        <p class="card-text">Singolo, 2023</p>
                         <div class="audio-player">
                             <audio id="audio2" src="songs/la spazzatura.mp3"></audio>
                             <div class="controls">
-                                <button class="play-pause-btn" onclick="togglePlayPause('audio2')">
+                                <button class="play-pause-btn" onclick="togglePlayPause('audio2', this)">
                                     <i class="fas fa-play"></i>
                                 </button>
                                 <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio2', this)">
-                                <div class="time">
-                                    <br>
-                                    <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
-                                </div>
+                                <br>
+                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Terza canzone -->
+            <!-- TERZA CANZONE -->
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm song-card">
                     <div class="card-body">
                         <h5 class="card-title">la fine della scuola</h5>
-                        <p class="card-text">Gioele Furnò, Singolo, 2023</p>
+                        <p class="card-text">Singolo, 2023</p>
                         <div class="audio-player">
                             <audio id="audio3" src="songs/la scuola.mp3"></audio>
                             <div class="controls">
-                                <button class="play-pause-btn" onclick="togglePlayPause('audio3')">
+                                <button class="play-pause-btn" onclick="togglePlayPause('audio3', this)">
                                     <i class="fas fa-play"></i>
                                 </button>
                                 <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio3', this)">
-                                <div class="time">
-                                    <br>
-                                    <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
-                                </div>                            
+                                <br>
+                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- QUARTA CANZONE -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm song-card">
+                    <div class="card-body">
+                        <h5 class="card-title">l'acqua</h5>
+                        <p class="card-text">Singolo, 2023</p>
+                        <div class="audio-player">
+                            <audio id="audio4" src="songs/l'acqua.mp3"></audio>
+                            <div class="controls">
+                                <button class="play-pause-btn" onclick="togglePlayPause('audio4', this)">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio4', this)">
+                                <br>
+                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- QUINTA CANZONE -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm song-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Città di Versi: Il Viaggio di Gioele</h5>
+                        <p class="card-text">Singolo, 2024</p>
+                        <div class="audio-player">
+                            <audio id="audio5" src="songs/Città di Versi Il viaggio di Gioele.mp3"></audio>
+                            <div class="controls">
+                                <button class="play-pause-btn" onclick="togglePlayPause('audio5', this)">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio5', this)">
+                                <br>
+                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SESTA CANZONE -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm song-card">
+                    <div class="card-body">
+                        <h5 class="card-title">grazie Dio</h5>
+                        <p class="card-text">Singolo, 2024</p>
+                        <div class="audio-player">
+                            <audio id="audio6" src="songs/grazie Dio.mp3"></audio>
+                            <div class="controls">
+                                <button class="play-pause-btn" onclick="togglePlayPause('audio6', this)">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio6', this)">
+                                <br>
+                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
+
                             </div>
                         </div>
                     </div>
@@ -93,77 +152,6 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <!-- Quarta canzone -->
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm song-card">
-                <div class="card-body">
-                    <h5 class="card-title">l'acqua</h5>
-                    <p class="card-text">Gioele Furnò, Singolo, 2023</p>
-                    <div class="audio-player">
-                        <audio id="audio4" src="songs/l'acqua.mp3"></audio>
-                        <div class="controls">
-                            <button class="play-pause-btn" onclick="togglePlayPause('audio4')">
-                                <i class="fas fa-play"></i>
-                            </button>
-                            <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio4', this)">
-                            <div class="time">
-                                <br>
-                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Quinta canzone -->
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm song-card">
-                <div class="card-body">
-                    <h5 class="card-title">Città di Versi: Il Viaggio di Gioele</h5>
-                    <p class="card-text">Gioele Furnò, Singolo, 2024</p>
-                    <div class="audio-player">
-                        <audio id="audio5" src="songs/Città di Versi Il viaggio di Gioele.mp3"></audio>
-                        <div class="controls">
-                            <button class="play-pause-btn" onclick="togglePlayPause('audio5')">
-                                <i class="fas fa-play"></i>
-                            </button>
-                            <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio5', this)">
-                            <div class="time">
-                                <br>
-                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Sesta canzone -->
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm song-card">
-                <div class="card-body">
-                    <h5 class="card-title">grazie Dio</h5>
-                    <p class="card-text">Gioele Furnò, coming soon, 2024</p>
-                    <div class="audio-player">
-                        <audio id="audio6" src="songs/il viaggio pt2.mp3"></audio>
-                        <div class="controls">
-                            <button class="play-pause-btn" onclick="togglePlayPause('audio6')">
-                                <i class="fas fa-play"></i>
-                            </button>
-                            <input type="range" class="seek-slider" max="100" value="0" onchange="seek('audio6', this)">
-                            <div class="time">
-                                <br>
-                                <span class="current-time">0:00</span>/<span class="total-time">0:00</span>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    
-    
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
