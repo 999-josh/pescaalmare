@@ -67,14 +67,16 @@ body {
     border-radius: 50%;
 }
 
+
+
 @media (max-width: 768px) {
     #lilText {
-        font-size: 14px; /* Base per tablet */
+        font-size: 20px; /* Base per tablet */
     }
 }
 
 @media (max-width: 480px) {
     #lilText {
-        font-size: 12px; /* Base per smartphone */
+        font-size: 16px; /* Base per smartphone */
     }
 }
