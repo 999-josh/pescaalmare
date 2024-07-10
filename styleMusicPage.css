@@ -72,11 +72,13 @@ body {
 @media (max-width: 768px) {
     #lilText {
         font-size: 20px; /* Base per tablet */
+        align-items: center;
     }
 }
 
 @media (max-width: 480px) {
     #lilText {
         font-size: 16px; /* Base per smartphone */
+        align-items: center;
     }
 }
